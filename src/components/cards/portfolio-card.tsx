@@ -12,41 +12,40 @@ import {
   ReactIcon,
   TailwindCSSIcon,
   ShadcnUIIcon,
+  TypeScriptIcon,
 } from "developer-icons";
-import { Icon } from "../icons/icon";
-
-const ICON_SIZE = 24;
+import { Icon, IconList } from "../icons/icon";
+import { Code } from "lucide-react";
+import { Button } from "../ui/button";
 
 export interface PortfolioCardProps {}
 
 export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
   return (
     <Card className={cn("row-span-2 col-span-2")}>
-      <CardHeader>
-        <CardTitle>This Portfolio</CardTitle>
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+        <CardTitle className="font-medium">This Portfolio</CardTitle>
+        <Code className="h-4 w-4 text-muted-foreground" />
+      </CardHeader>
+
+      <CardContent className="h-full">
         <CardDescription>
           is built with Next.js, React, Tailwind & shadcn/ui
         </CardDescription>
-      </CardHeader>
 
-      <CardContent>
-        <div className="flex gap-2 h-14">
-          <Icon label="GitHub">
-            <GitHubIcon className="w-full" />
-          </Icon>
-          <Icon label="React">
-            <ReactIcon className="w-full" />
-          </Icon>
-          <Icon label="Next.js">
-            <NextJsIcon className="w-full" />
-          </Icon>
-          <Icon label="Tailwind CSS">
-            <TailwindCSSIcon className="w-full" />
-          </Icon>
-          <Icon label="shadcn/ui">
-            <ShadcnUIIcon className="w-full" />
-          </Icon>
+        <div className="flex gap-2">
+          <IconList
+            icons={[
+              { name: "TypeScript", icon: TypeScriptIcon },
+              { name: "React", icon: ReactIcon },
+              { name: "Next.js", icon: NextJsIcon },
+              { name: "Tailwind CSS", icon: TailwindCSSIcon },
+              { name: "shadcn/ui", icon: ShadcnUIIcon },
+            ]}
+          />
         </div>
+
+        <Button>GitHub</Button>
       </CardContent>
     </Card>
   );

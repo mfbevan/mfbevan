@@ -53,6 +53,8 @@ import {
   SwaggerIcon,
   VisualStudioCodeIcon,
   ZodIcon,
+  GitHubIcon,
+  GitLabIcon,
 } from "developer-icons";
 import { IconList } from "../icons/icon";
 import { Typography } from "../ui/typography";
@@ -69,37 +71,37 @@ export const SkillsCard: React.FC<SkillsCardProps> = () => {
       <ControlledCard
         card="skills"
         className="flex flex-col gap-4 text-left"
-        whenOpen="h-[205%]"
+        whenOpen="h-[205%] w-[120%] left-[-20%]"
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-0">
           <CardTitle className="font-medium">Skills</CardTitle>
           <Code2 className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
 
-        <CardContent className="flex flex-col gap-2 overflow-hidden mb-6">
+        <CardContent className="flex flex-col gap-2 overflow-scroll mb-6">
           <Typography effect="muted">Languages</Typography>
           <div className="flex flex-wrap gap-2">
-            <IconList icons={languages} />
+            <IconList icons={languages} size={24} />
           </div>
 
           <Typography effect="muted">Frameworks</Typography>
           <div className="flex flex-wrap gap-2">
-            <IconList icons={frameworks} />
+            <IconList icons={frameworks} size={24} />
           </div>
 
           <Typography effect="muted">Database</Typography>
           <div className="flex flex-wrap gap-2">
-            <IconList icons={databases} />
+            <IconList icons={databases} size={24} />
           </div>
 
           <Typography effect="muted">DevOps</Typography>
           <div className="flex flex-wrap gap-2">
-            <IconList icons={devops} />
+            <IconList icons={devops} size={24} />
           </div>
 
           <Typography effect="muted">Tools & Services</Typography>
           <div className="flex flex-wrap gap-2">
-            <IconList icons={tools} />
+            <IconList icons={tools} size={24} />
           </div>
         </CardContent>
 
@@ -161,6 +163,8 @@ const databases = [
 
 const devops = [
   { name: "Git", icon: GitIcon },
+  { name: "GitHub", icon: GitHubIcon },
+  { name: "GitLab", icon: GitLabIcon },
   { name: "Docker", icon: DockerIcon },
   { name: "Kubernetes", icon: KubernetesIcon },
   { name: "AWS", icon: AWSIcon },

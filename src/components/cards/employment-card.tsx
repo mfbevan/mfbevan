@@ -11,7 +11,7 @@ export const EmploymentCard: React.FC<EmploymentCardProps> = () => {
       <ControlledCard
         card="employment"
         className="flex flex-col gap-4 text-left"
-        whenOpen="h-full w-[200%]"
+        whenOpen="h-full w-[200%] left-[-100%]"
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="font-medium">Employment</CardTitle>

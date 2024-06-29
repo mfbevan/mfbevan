@@ -34,7 +34,7 @@ export const IconList: React.FC<{
       Partial<SVGProps<SVGElement>> & { size?: number }
     >;
   }[];
-}> = ({ icons, size = 24 }) => {
+}> = ({ icons, size }) => {
   return (
     <>
       {icons.map(({ name, icon }) => (

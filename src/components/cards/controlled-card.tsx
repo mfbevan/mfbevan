@@ -34,7 +34,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
           "relative ease transition-all ease-in-out duration-300 cursor-pointer",
           className,
           {
-            [cn("h-full hover:m-1", whenClosed)]: !isOpen,
+            [cn("h-full w-full left-0 hover:m-1", whenClosed)]: !isOpen,
             [cn("z-20", whenOpen)]: isOpen,
           }
         )}
