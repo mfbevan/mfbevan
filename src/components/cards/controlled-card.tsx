@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Card } from "../ui/card";
 import { useCardLayout } from "../hooks/use-card-layout";
+import { Typography } from "../ui/typography";
 
 export interface ControlledCardProps {
   card: string;
@@ -34,13 +35,23 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
           "relative ease transition-all ease-in-out duration-300 cursor-pointer",
           className,
           {
-            [cn("h-full w-full left-0 hover:m-1", whenClosed)]: !isOpen,
+            [cn("h-full w-full inset-0 hover:m-1", whenClosed)]: !isOpen,
             [cn("z-20", whenOpen)]: isOpen,
           }
         )}
         onClick={onToggle}
       >
         {children}
+
+        <Typography
+          effect="tiny"
+          className={cn(
+            "text-center absolute bottom-2 w-full transition-all ease",
+            { "opacity-0": isOpen }
+          )}
+        >
+          Click to see more
+        </Typography>
       </Card>
     </>
   );

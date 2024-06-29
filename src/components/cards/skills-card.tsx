@@ -104,18 +104,6 @@ export const SkillsCard: React.FC<SkillsCardProps> = () => {
             <IconList icons={tools} size={24} />
           </div>
         </CardContent>
-
-        <Typography
-          effect="tiny"
-          className={cn(
-            "text-center absolute bottom-2 w-full transition-all ease",
-            {
-              "opacity-0": isOpen,
-            }
-          )}
-        >
-          Click to see more
-        </Typography>
       </ControlledCard>
     </div>
   );
