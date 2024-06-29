@@ -1,11 +1,12 @@
 "use client";
 
 import {
-  TooltipProvider,
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
+import { DeveloperIconProps } from "developer-icons/dist/icon";
+import { FunctionComponentElement, SVGProps } from "react";
 
 export interface IconProps {
   children: React.ReactNode;
@@ -14,13 +15,33 @@ export interface IconProps {
 
 export const Icon: React.FC<IconProps> = ({ children, label }) => {
   return (
-    <TooltipProvider delayDuration={100}>
-      <Tooltip>
-        <TooltipTrigger>{children}</TooltipTrigger>
-        <TooltipContent>
-          <p>{label}</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <Tooltip>
+      <TooltipTrigger>{children}</TooltipTrigger>
+      <TooltipContent side="bottom" sideOffset={10}>
+        <p>{label}</p>
+      </TooltipContent>
+    </Tooltip>
+  );
+};
+
+export const IconList: React.FC<{
+  size?: number;
+  icons: {
+    name: string;
+    icon: (
+      props: DeveloperIconProps
+    ) => FunctionComponentElement<
+      Partial<SVGProps<SVGElement>> & { size?: number }
+    >;
+  }[];
+}> = ({ icons, size = 24 }) => {
+  return (
+    <>
+      {icons.map(({ name, icon }) => (
+        <Icon key={name} label={name}>
+          {icon({ className: "w-full", size })}
+        </Icon>
+      ))}
+    </>
   );
 };
