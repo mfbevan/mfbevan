@@ -18,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("h-screen w-screen overflow-hidden", GeistSans.variable)}
+        className={cn(
+          "md:h-screen w-screen md:overflow-hidden",
+          GeistSans.variable
+        )}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <TooltipProvider delayDuration={100}>{children}</TooltipProvider>

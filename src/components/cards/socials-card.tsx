@@ -7,7 +7,7 @@ export interface SocialsCardProps {}
 
 export const SocialsCard: React.FC<SocialsCardProps> = () => {
   return (
-    <div className="col-span-2 row-span-2 flex flex-col gap-4">
+    <div className="col-span-2 row-span-2 flex md:flex-col gap-4">
       <Link
         href="https://github.com/mfbevan"
         target="_blank"

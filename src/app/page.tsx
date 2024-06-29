@@ -12,8 +12,19 @@ import { TitleCard } from "@/components/cards/title-card";
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-screen flex-col p-4">
-      <div className="grid grid-cols-10 grid-rows-8 gap-4 h-full">
+    <main className="flex md:h-screen w-screen flex-col p-4">
+      <div className="flex flex-col gap-4 md:hidden">
+        <TitleCard />
+        <SocialsCard />
+        <SkillsCard />
+        <ProjectsCard />
+        <EmploymentCard />
+        <EducationCard />
+        <BlogCard />
+        <PortfolioCard />
+        <SettingsCard />
+      </div>
+      <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
         <BlogCard />
         <ProjectsCard />
         <SkillsCard />

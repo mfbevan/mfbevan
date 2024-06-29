@@ -59,26 +59,23 @@ import {
 import { IconList } from "../icons/icon";
 import { Typography } from "../ui/typography";
 import { Code2 } from "lucide-react";
-import { useCardLayout } from "../hooks/use-card-layout";
 
 export interface SkillsCardProps {}
 
 export const SkillsCard: React.FC<SkillsCardProps> = () => {
-  const { isOpen } = useCardLayout("skills");
-
   return (
     <div className={cn("col-span-4 row-span-2")}>
       <ControlledCard
         card="skills"
         className="flex flex-col gap-4 text-left"
-        whenOpen="h-[205%] w-[120%] left-[-20%]"
+        whenOpen="md: h-[205%] md:w-[120%] md:left-[-20%]"
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-0">
           <CardTitle className="font-medium">Skills</CardTitle>
           <Code2 className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
 
-        <CardContent className="flex flex-col gap-2 overflow-scroll mb-6">
+        <CardContent className="flex flex-col gap-2 overflow-scroll md:mb-6">
           <Typography effect="muted">Languages</Typography>
           <div className="flex flex-wrap gap-2">
             <IconList icons={languages} size={24} />

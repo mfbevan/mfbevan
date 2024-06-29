@@ -8,7 +8,6 @@ import {
 } from "../ui/card";
 import {
   GitHubIcon,
-  NextJsIcon,
   ReactIcon,
   TailwindCSSIcon,
   ShadcnUIIcon,
@@ -25,7 +24,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
   return (
     <Card className={cn("row-span-2 col-span-2")}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="font-medium">This Portfolio</CardTitle>
+        <CardTitle className="font-medium">This Portfolio</CardTitle>f
         <Code className="h-4 w-4 text-muted-foreground" />
       </CardHeader>
 
@@ -41,7 +40,6 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
               { name: "GitHub", icon: GitHubIcon },
               { name: "TypeScript", icon: TypeScriptIcon },
               { name: "React", icon: ReactIcon },
-              { name: "Next.js", icon: NextJsIcon },
               { name: "Tailwind CSS", icon: TailwindCSSIcon },
               { name: "shadcn/ui", icon: ShadcnUIIcon },
             ]}
