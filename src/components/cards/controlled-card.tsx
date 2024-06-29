@@ -1,11 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Card } from "../ui/card";
 import { useCardLayout } from "../hooks/use-card-layout";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 export interface ControlledCardProps {
   card: string;
@@ -34,29 +29,19 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
         onClick={onClose}
       />
 
-      <Tooltip disableHoverableContent>
-        <TooltipTrigger className="w-full h-full">
-          <Card
-            className={cn(
-              "relative ease transition-all ease-in-out duration-300 cursor-pointer",
-              className,
-              {
-                [cn("h-full hover:m-1", whenClosed)]: !isOpen,
-                [cn("z-20", whenOpen)]: isOpen,
-              }
-            )}
-            onClick={onToggle}
-          >
-            {children}
-          </Card>
-        </TooltipTrigger>
-
-        {!isOpen && (
-          <TooltipContent>
-            <p>Click to see more</p>
-          </TooltipContent>
+      <Card
+        className={cn(
+          "relative ease transition-all ease-in-out duration-300 cursor-pointer",
+          className,
+          {
+            [cn("h-full hover:m-1", whenClosed)]: !isOpen,
+            [cn("z-20", whenOpen)]: isOpen,
+          }
         )}
-      </Tooltip>
+        onClick={onToggle}
+      >
+        {children}
+      </Card>
     </>
   );
 };
