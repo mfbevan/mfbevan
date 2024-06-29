@@ -3,6 +3,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,9 @@ export default function RootLayout({
       <body
         className={cn("h-screen w-screen overflow-hidden", GeistSans.variable)}
       >
-        <TooltipProvider delayDuration={100}>{children}</TooltipProvider>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <TooltipProvider delayDuration={100}>{children}</TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

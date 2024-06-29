@@ -14,9 +14,10 @@ import {
   ShadcnUIIcon,
   TypeScriptIcon,
 } from "developer-icons";
-import { Icon, IconList } from "../icons/icon";
+import { IconList } from "../icons/icon";
 import { Code } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export interface PortfolioCardProps {}
 
@@ -33,9 +34,11 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
           is built with Next.js, React, Tailwind & shadcn/ui
         </CardDescription>
 
-        <div className="flex gap-2">
+        <div className="flex justify-between gap-2 py-4">
           <IconList
+            size={24}
             icons={[
+              { name: "GitHub", icon: GitHubIcon },
               { name: "TypeScript", icon: TypeScriptIcon },
               { name: "React", icon: ReactIcon },
               { name: "Next.js", icon: NextJsIcon },
@@ -45,7 +48,12 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
           />
         </div>
 
-        <Button>GitHub</Button>
+        <Link href="">
+          <Button className="flex gap-2 mx-auto" variant="outline">
+            <GitHubIcon size={16} />
+            View on GitHub
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );
