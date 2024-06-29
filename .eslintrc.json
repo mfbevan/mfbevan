@@ -1,3 +1,23 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "import/extensions": 0,
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": 0,
+    "import/order": [
+      2,
+      {
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-shadow": "off",
+    "arrow-body-style": 2,
+    "@typescript-eslint/no-unused-vars": "error"
+  }
 }
