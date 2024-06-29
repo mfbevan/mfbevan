@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Card } from "../ui/card";
 import { Typography } from "../ui/typography";
 import { useLayoutStore } from "../hooks/use-layout-store";
+import Image from "next/image";
 
 export interface TitleCardProps {}
 
@@ -14,10 +15,25 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
         "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4"
       )}
     >
-      <Typography variant="h1" className="text-6xl">
-        Matthew Bevan
-      </Typography>
-      <Typography variant="h3">Software Engineer</Typography>
+      <div className="flex gap-8">
+        <Image
+          src="/profile.jpeg"
+          alt="profile"
+          width={150}
+          height={150}
+          style={{
+            borderRadius: "50%",
+            userSelect: "none",
+            pointerEvents: "none",
+          }}
+        />
+        <div className="flex flex-col justify-center">
+          <Typography variant="h1" className="text-6xl">
+            Matthew Bevan
+          </Typography>
+          <Typography variant="h3">Software Engineer</Typography>
+        </div>
+      </div>
 
       <Typography effect="tiny">
         I am a software engineer with a passion for programming and problem

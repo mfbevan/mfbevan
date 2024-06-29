@@ -24,7 +24,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
   return (
     <Card className={cn("row-span-2 col-span-2")}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <CardTitle className="font-medium">This Portfolio</CardTitle>f
+        <CardTitle className="font-medium">This Portfolio</CardTitle>
         <Code className="h-4 w-4 text-muted-foreground" />
       </CardHeader>
 

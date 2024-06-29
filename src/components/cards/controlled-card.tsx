@@ -22,10 +22,13 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
   return (
     <>
       <div
-        className={cn("transition-all ease-in-out duration-300 z-10", {
-          "fixed inset-0 bg-black bg-opacity-10 backdrop-blur-sm": isOpen,
-          "relative backdrop-blur-0 bg-opacity-0": !isOpen,
-        })}
+        className={cn(
+          "transition-all ease-in-out duration-300 z-10 fixed inset-0",
+          {
+            "bg-black bg-opacity-10 backdrop-blur-md": isOpen,
+            "pointer-events-none backdrop-blur-0 bg-opacity-0": !isOpen,
+          }
+        )}
         onClick={onClose}
       />
 
@@ -35,7 +38,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
           className,
           {
             [cn(
-              "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg",
+              "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg md:hover:bg-accent",
               whenClosed
             )]: !isOpen,
             [cn("z-20", whenOpen)]: isOpen,
