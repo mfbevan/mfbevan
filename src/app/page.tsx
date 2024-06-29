@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogCard } from "@/components/cards/blog-card";
 import { EmploymentCard } from "@/components/cards/employment-card";
 import { PlaceholderCard } from "@/components/cards/placeholder-card";
@@ -19,8 +21,8 @@ export default function Home() {
         <EmploymentCard />
         <PortfolioCard />
         <SocialsCard />
-        <SettingsCard />
         <PlaceholderCard />
+        <SettingsCard />
       </div>
     </main>
   );
