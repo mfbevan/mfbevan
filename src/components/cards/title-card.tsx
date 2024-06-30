@@ -27,10 +27,12 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
           }}
         />
         <div className="flex flex-col justify-center">
-          <Typography variant="h1" className="lg:text-6xl">
+          <Typography variant="h1" className="text-4xl md:text-5xl lg:text-6xl">
             Matthew Bevan
           </Typography>
-          <Typography variant="h3">Senior Software Engineer</Typography>
+          <Typography variant="h3" className="text-lg md:text-2xl">
+            Senior Software Engineer
+          </Typography>
         </div>
         <div className="flex flex-2" />
       </div>
@@ -46,9 +48,9 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
       <div className="gap-2 flex flex-col">
         <Typography effect="tiny" className="max-w-md mx-auto">
           With a solid foundation in both Web 2.0 and Web 3.0 technologies, I
-          bring expertise in Ethereum smart contract development and full-stack
-          application development. Passionate about building innovative and
-          performant platforms, I have contributed to several enterprise-level
+          bring expertise in Ethereum smart contract and full-stack application
+          development. Passionate about building innovative and performant
+          applications, I have contributed to several enterprise-level
           platforms, open-source initiatives, and a variety of personal
           projects.
         </Typography>

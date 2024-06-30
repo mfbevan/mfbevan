@@ -19,13 +19,13 @@ export default function Home() {
       <div className="flex flex-col gap-4 md:hidden">
         <TitleCard />
         <SocialsCard />
+        <StatsCards />
         <SkillsCard />
         <ProjectsCard />
         <EmploymentCard />
         <EducationCard />
         <LanguageStatsCard />
         <PortfolioCard />
-        <SettingsCard />
       </div>
       <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
         <ProjectsCard />

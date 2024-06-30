@@ -17,21 +17,17 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
     <div className="col-span-3 lg:col-span-2 row-span-2 h-full w-full">
       <Swiper
         className="h-full w-full cursor-none"
-        effect={"cube"}
-        grabCursor={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         spaceBetween={32}
-        allowTouchMove={false}
         pagination
-        noSwiping={true}
         loop
         speed={1000}
         modules={[Pagination, Autoplay]}
       >
-        <SwiperSlide className="cursor-default p-[1px]">
+        <SwiperSlide className="p-[1px]">
           <StatsCard
             title="Full Stack Developer"
             value="5+ years"
@@ -40,7 +36,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide className="cursor-default p-[1px]">
+        <SwiperSlide className="p-[1px]">
           <StatsCard
             title="Blockchain Developer"
             value="2+ years"
@@ -49,7 +45,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide className="cursor-default p-[1px]">
+        <SwiperSlide className="p-[1px]">
           <StatsCard
             title="Programming"
             value="15+ years"
