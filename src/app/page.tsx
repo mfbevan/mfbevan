@@ -10,6 +10,7 @@ import { SkillsCard } from "@/components/cards/skills-card";
 import { SocialsCard } from "@/components/cards/socials-card";
 import { StatsCards } from "@/components/cards/stats-cards";
 import { TitleCard } from "@/components/cards/title-card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
         <SettingsCard />
       </div>
       <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
-        <BlogCard />
         <ProjectsCard />
         <SkillsCard />
+        <BlogCard />
         <TitleCard />
         <EmploymentCard />
         <PortfolioCard />

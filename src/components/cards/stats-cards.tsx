@@ -5,7 +5,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 
@@ -15,28 +15,24 @@ export interface StatsCardsProps {}
 
 export const StatsCards: React.FC<StatsCardsProps> = () => {
   return (
-    <div className="col-span-2 row-span-2 h-full w-full ">
+    <div className="col-span-3 lg:col-span-2 row-span-2 h-full w-full">
       <Swiper
         className="h-full w-full cursor-none"
         effect={"cube"}
         grabCursor={true}
-        cubeEffect={{
-          shadow: false,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
+        spaceBetween={32}
         allowTouchMove={false}
+        pagination
         noSwiping={true}
         loop
         speed={1000}
-        modules={[EffectCube, Pagination, Autoplay]}
+        modules={[Pagination, Autoplay]}
       >
-        <SwiperSlide className="cursor-default">
+        <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Full Stack Developer"
             value="4+ years"
@@ -45,7 +41,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide className="cursor-default">
+        <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Blockchain Developer"
             value="2+ years"
@@ -54,7 +50,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
           />
         </SwiperSlide>
 
-        <SwiperSlide className="cursor-default">
+        <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Programming"
             value="15+ years"

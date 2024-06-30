@@ -13,7 +13,7 @@ export interface ProjectsCardProps {}
 
 export const ProjectsCard: React.FC<ProjectsCardProps> = () => {
   return (
-    <div className={cn("col-span-4 row-span-2")}>
+    <div className={cn("col-span-6 row-span-2")}>
       <ControlledCard
         card="projects"
         className="flex flex-col gap-4 text-left"

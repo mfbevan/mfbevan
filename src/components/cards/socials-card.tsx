@@ -7,18 +7,18 @@ export interface SocialsCardProps {}
 
 export const SocialsCard: React.FC<SocialsCardProps> = () => {
   return (
-    <div className="col-span-2 row-span-2 flex md:flex-col gap-4">
+    <div className="col-span-1 lg:col-span-2 row-span-2 flex md:flex-col gap-4">
       <Link
         href="https://github.com/mfbevan"
         target="_blank"
         className="w-full h-full"
       >
         <Button
-          className="flex gap-2 shadow rounded-lg w-full h-full"
+          className="flex gap-2 shadow rounded-lg w-full h-full hover:m-1 transition-all ease-in-out duration-300"
           variant="outline"
         >
           <GitHubLogoIcon className="size-6" />
-          <Typography>GitHub</Typography>
+          <Typography className="block md:hidden lg:block">GitHub</Typography>
         </Button>
       </Link>
 
@@ -28,19 +28,13 @@ export const SocialsCard: React.FC<SocialsCardProps> = () => {
         className="w-full h-full"
       >
         <Button
-          className="flex gap-2 w-full h-full shadow rounded-lg"
+          className="flex gap-2 w-full h-full shadow rounded-lg hover:m-1 transition-all ease-in-out duration-300"
           variant="outline"
         >
           <LinkedInLogoIcon className="size-6" />
-          <Typography>LinkedIn</Typography>
+          <Typography className="block md:hidden lg:block">LinkedIn</Typography>
         </Button>
       </Link>
-      {/* <Card className="flex flex-col items-center justify-center h-full">
-        <Typography variant="h2">Placeholder</Typography>
-      </Card>
-      <Card className="flex flex-col items-center justify-center h-full">
-        <Typography variant="h2">Placeholder</Typography>
-      </Card> */}
     </div>
   );
 };

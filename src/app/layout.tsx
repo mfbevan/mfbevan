@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "md:h-screen w-screen md:overflow-hidden",
+          "md:h-screen w-screen md:overflow-hidden bg-accent",
           GeistSans.variable
         )}
       >

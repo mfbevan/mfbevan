@@ -16,7 +16,7 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
         "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4"
       )}
     >
-      <div className="flex flex-col items-center gap-4 md:flex-row">
+      <div className="flex flex-col items-center gap-4 md:flex-row justify-evenly">
         <Image
           src="/profile.jpeg"
           alt="profile"
@@ -34,6 +34,7 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
           </Typography>
           <Typography variant="h3">Software Engineer</Typography>
         </div>
+        <div className="flex flex-2" />
       </div>
 
       <Typography effect="tiny">

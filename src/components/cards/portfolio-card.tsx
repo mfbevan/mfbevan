@@ -46,7 +46,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
           />
         </div>
 
-        <Link href="">
+        <Link href="https://github.com/mfbevan/mfbevan" target="_blank">
           <Button className="gap-2 mx-auto hidden lg:flex" variant="outline">
             <GitHubIcon size={16} />
             View on GitHub
