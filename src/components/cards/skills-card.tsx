@@ -127,7 +127,7 @@ const frameworks = [
   { name: "Radix UI", icon: RadixUIIcon },
   { name: "shadcn/ui", icon: ShadcnUIIcon },
   { name: "Material UI", icon: MaterialUIIcon },
-  { name: "Chakra UI", icon: ChakraUIIcon },
+  // { name: "Chakra UI", icon: ChakraUIIcon },
   { name: "NestJS", icon: NestJSIcon },
   { name: "React Query", icon: ReactQueryIcon },
   { name: "TRPC", icon: TRPCIcon },
@@ -160,7 +160,7 @@ const devops = [
   { name: "Google Cloud", icon: GoogleCloudIcon },
   { name: "Cloudflare", icon: CloudflareIcon },
   { name: "EC2", icon: EC2Icon },
-  { name: "Grafana", icon: GrafanaIcon },
+  // { name: "Grafana", icon: GrafanaIcon },
   { name: "Redis", icon: RedisIcon },
   { name: "Serverless", icon: ServerlessIcon },
 ];

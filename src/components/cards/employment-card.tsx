@@ -26,7 +26,7 @@ export const EmploymentCard: React.FC<EmploymentCardProps> = () => {
             company="Labrys"
             date="Since March 2022"
             title="Senior Blockchain Engineer"
-            description="I currently work as a Senior Blockchain and Full Stack Software Engineer at Australia's largest Blockchain Development agency, tackling problems in both the Web 2.0 and Web 3.0 world, developing smart contract and web applications to support them. I have particular skills in Solidity, Hardhat, Ethers.js, Web3.js, ThirdWeb and Alchemy services for smart contract development, as well as Next.js, React, TypeScript, Node.js, MongoDB experience for building full-stack Web3 applications. Continued areas of research "
+            description="I currently work as a Senior Blockchain and Full Stack Software Engineer at Australia's largest Blockchain Development agency, tackling problems in both the Web 2.0 and Web 3.0 world, developing smart contract and web applications to solve them. I have particular skills in Solidity, Hardhat, Ethers.js, Web3.js, ThirdWeb and Alchemy services for smart contract development, as well as Next.js, React, TypeScript, Node.js, MongoDB experience for building full-stack Web3 applications."
           />
 
           <Separator />
@@ -79,7 +79,7 @@ const EmploymentItem: React.FC<{
           <Typography className="text-xs opacity-50">{date}</Typography>
         )}
       </div>
-      <Typography className="font-sm text-muted-foreground tracking-tight leading-4">
+      <Typography className="font-xs text-muted-foreground tracking-tight leading-4 italic pt-1">
         {company}
       </Typography>
       <Typography
