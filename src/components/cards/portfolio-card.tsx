@@ -47,7 +47,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
         </div>
 
         <Link href="">
-          <Button className="flex gap-2 mx-auto" variant="outline">
+          <Button className="gap-2 mx-auto hidden lg:flex" variant="outline">
             <GitHubIcon size={16} />
             View on GitHub
           </Button>

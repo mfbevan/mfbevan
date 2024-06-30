@@ -3,6 +3,7 @@ import { Card } from "../ui/card";
 import { Typography } from "../ui/typography";
 import { useLayoutStore } from "../hooks/use-layout-store";
 import Image from "next/image";
+import { Badge } from "../ui/badge";
 
 export interface TitleCardProps {}
 
@@ -15,7 +16,7 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
         "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4"
       )}
     >
-      <div className="flex gap-8">
+      <div className="flex flex-col items-center gap-4 md:flex-row">
         <Image
           src="/profile.jpeg"
           alt="profile"

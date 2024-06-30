@@ -8,6 +8,7 @@ import { ProjectsCard } from "@/components/cards/projects-card";
 import { SettingsCard } from "@/components/cards/settings-card";
 import { SkillsCard } from "@/components/cards/skills-card";
 import { SocialsCard } from "@/components/cards/socials-card";
+import { StatsCards } from "@/components/cards/stats-cards";
 import { TitleCard } from "@/components/cards/title-card";
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
         <PortfolioCard />
         <EducationCard />
         <SocialsCard />
-        <SettingsCard />
+        <StatsCards />
       </div>
     </main>
   );

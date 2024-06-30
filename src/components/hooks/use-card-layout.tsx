@@ -12,7 +12,6 @@ export const useCardLayout = (card: string) => {
     setSelected(card);
   };
   const onClose = () => {
-    if (isMobile) return;
     setSelected(undefined);
   };
   const onToggle = () => {
