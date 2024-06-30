@@ -35,7 +35,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
         <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Full Stack Developer"
-            value="4+ years"
+            value="5+ years"
             description="Building full stack React, TypeScript, Next.js, Node.js applications"
             icon={<FileCode2 className="h-4 w-4 text-muted-foreground" />}
           />
