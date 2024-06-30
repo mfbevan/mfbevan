@@ -38,7 +38,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
           className,
           {
             [cn(
-              "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg md:hover:bg-accent",
+              "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg md:hover:bg-accent z-2",
               whenClosed
             )]: !isOpen,
             [cn("z-20", whenOpen)]: isOpen,

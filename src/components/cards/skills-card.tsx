@@ -55,6 +55,8 @@ import {
   ZodIcon,
   GitHubIcon,
   GitLabIcon,
+  GoIcon,
+  RustIcon,
 } from "developer-icons";
 import { IconList } from "../icons/icon";
 import { Typography } from "../ui/typography";
@@ -113,6 +115,8 @@ const languages = [
   { name: "TypeScript", icon: TypeScriptIcon },
   { name: "Solidity", icon: SolidityIcon },
   { name: "C#", icon: CSharpIcon },
+  { name: "Go", icon: GoIcon },
+  { name: "Rust", icon: RustIcon },
 ];
 
 const frameworks = [

@@ -3,6 +3,7 @@
 import { BlogCard } from "@/components/cards/blog-card";
 import { EducationCard } from "@/components/cards/education-card";
 import { EmploymentCard } from "@/components/cards/employment-card";
+import { LanguageStatsCard } from "@/components/cards/language-stats";
 import { PortfolioCard } from "@/components/cards/portfolio-card";
 import { ProjectsCard } from "@/components/cards/projects-card";
 import { SettingsCard } from "@/components/cards/settings-card";
@@ -22,14 +23,14 @@ export default function Home() {
         <ProjectsCard />
         <EmploymentCard />
         <EducationCard />
-        <BlogCard />
+        <LanguageStatsCard />
         <PortfolioCard />
         <SettingsCard />
       </div>
       <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
         <ProjectsCard />
         <SkillsCard />
-        <BlogCard />
+        <LanguageStatsCard />
         <TitleCard />
         <EmploymentCard />
         <PortfolioCard />

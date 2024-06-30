@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Card } from "../ui/card";
 import { Typography } from "../ui/typography";
-import { useLayoutStore } from "../hooks/use-layout-store";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
@@ -9,12 +8,10 @@ import { Separator } from "../ui/separator";
 export interface TitleCardProps {}
 
 export const TitleCard: React.FC<TitleCardProps> = () => {
-  const { selected } = useLayoutStore();
-
   return (
     <Card
       className={cn(
-        "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4"
+        "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4 justify-around"
       )}
     >
       <div className="flex flex-col items-center gap-4 md:flex-row justify-evenly">
@@ -46,13 +43,19 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
         <Badge variant="secondary">Web 3.0 Enthusiast</Badge>
       </div>
 
-      <Typography effect="tiny">
-        With a solid foundation in both Web 2.0 and Web 3.0 technologies, I
-        bring expertise in Ethereum smart contract development and full-stack
-        application development. Passionate about building innovative and
-        performant platforms, I have contributed to several enterprise-level
-        platforms, open-source initiatives, and a variety of personal projects.
-      </Typography>
+      <div className="gap-2 flex flex-col">
+        <Typography effect="tiny" className="max-w-md mx-auto">
+          With a solid foundation in both Web 2.0 and Web 3.0 technologies, I
+          bring expertise in Ethereum smart contract development and full-stack
+          application development. Passionate about building innovative and
+          performant platforms, I have contributed to several enterprise-level
+          platforms, open-source initiatives, and a variety of personal
+          projects.
+        </Typography>
+        <Typography effect="tiny" className="font-bold text-primary">
+          Click around to learn more!
+        </Typography>
+      </div>
     </Card>
   );
 };

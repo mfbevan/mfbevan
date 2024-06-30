@@ -1,11 +1,10 @@
 "use client";
 
 import "swiper/css";
-import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 
