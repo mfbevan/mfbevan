@@ -14,7 +14,7 @@ export const SocialsCard: React.FC<SocialsCardProps> = () => {
         className="w-full h-full"
       >
         <Button
-          className="flex gap-2 shadow rounded-lg w-full h-full hover:m-1 transition-all ease-in-out duration-300"
+          className="flex gap-2 shadow rounded-2xl w-full h-full hover:m-1 transition-all ease-in-out duration-300"
           variant="outline"
         >
           <GitHubLogoIcon className="size-6" />
@@ -28,7 +28,7 @@ export const SocialsCard: React.FC<SocialsCardProps> = () => {
         className="w-full h-full"
       >
         <Button
-          className="flex gap-2 w-full h-full shadow rounded-lg hover:m-1 transition-all ease-in-out duration-300"
+          className="flex gap-2 w-full h-full shadow rounded-2xl hover:m-1 transition-all ease-in-out duration-300"
           variant="outline"
         >
           <LinkedInLogoIcon className="size-6" />

@@ -23,7 +23,11 @@ export default function RootLayout({
           GeistSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          forcedTheme="light"
+        >
           <TooltipProvider delayDuration={100}>{children}</TooltipProvider>
         </ThemeProvider>
       </body>

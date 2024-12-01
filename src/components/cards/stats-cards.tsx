@@ -44,7 +44,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
         <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Blockchain Developer"
-            value="2+ years"
+            value="3+ years"
             description="Building Solidity and Rust smart contracts on Ethereum and Substrate blockchains"
             icon={<Boxes className="h-4 w-4 text-muted-foreground" />}
           />
@@ -53,7 +53,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
         <SwiperSlide className="cursor-default p-[1px]">
           <StatsCard
             title="Programming"
-            value="15+ years"
+            value="10+ years"
             description="Building software applications and games in various programming languages"
             icon={<Gamepad2 className="h-4 w-4 text-muted-foreground" />}
           />

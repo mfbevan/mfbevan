@@ -29,7 +29,7 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
       </CardHeader>
 
       <CardContent className="h-full">
-        <CardDescription>
+        <CardDescription className="line-clamp-2">
           is built with Next.js, React, Tailwind & shadcn/ui
         </CardDescription>
 

@@ -35,14 +35,13 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
       <Card
         className={cn(
           "relative ease transition-all ease-in-out duration-300 cursor-pointer",
-          className,
-          {
-            [cn(
-              "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg md:hover:bg-accent",
-              whenClosed
-            )]: !isOpen,
-            [cn("z-20", whenOpen)]: isOpen,
-          }
+          isOpen
+            ? cn("z-20", whenOpen)
+            : cn(
+                "h-full w-full inset-0 md:hover:m-1 md:hover:shadow-lg md:hover:bg-accent",
+                whenClosed
+              ),
+          className
         )}
         onClick={onToggle}
       >

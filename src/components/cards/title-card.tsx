@@ -9,8 +9,6 @@ import { Separator } from "../ui/separator";
 export interface TitleCardProps {}
 
 export const TitleCard: React.FC<TitleCardProps> = () => {
-  const { selected } = useLayoutStore();
-
   return (
     <Card
       className={cn(
@@ -33,7 +31,7 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
           <Typography variant="h1" className="lg:text-6xl">
             Matthew Bevan
           </Typography>
-          <Typography variant="h3">Senior Software Engineer</Typography>
+          <Typography variant="h3">Software Engineer</Typography>
         </div>
         <div className="flex flex-2" />
       </div>
@@ -46,7 +44,7 @@ export const TitleCard: React.FC<TitleCardProps> = () => {
         <Badge variant="secondary">Web 3.0 Enthusiast</Badge>
       </div>
 
-      <Typography effect="tiny">
+      <Typography effect="tiny" className="max-w-md mx-auto">
         With a solid foundation in both Web 2.0 and Web 3.0 technologies, I
         bring expertise in Ethereum smart contract development and full-stack
         application development. Passionate about building innovative and
