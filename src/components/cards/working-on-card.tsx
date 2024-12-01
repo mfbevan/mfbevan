@@ -45,7 +45,7 @@ export const WorkingOnCard: React.FC<WorkingOnCardProps> = () => {
         </Typography>
         <Typography
           variant="p"
-          className="text-xs text-muted-foreground line-clamp-3"
+          className="text-xs text-muted-foreground line-clamp-3 text-center"
         >
           Open-source LayerZero OFT bridging interface.
         </Typography>
