@@ -4,10 +4,12 @@ import { ControlledCard } from "./controlled-card";
 import { FolderKanban } from "lucide-react";
 import { useCardLayout } from "../hooks/use-card-layout";
 import Image from "next/image";
+import { useMediaQuery } from "usehooks-ts";
 
 export interface ProjectsCardProps {}
 
 export const ProjectsCard: React.FC<ProjectsCardProps> = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const { isOpen } = useCardLayout("projects");
 
   return (
@@ -26,7 +28,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = () => {
           className={cn(
             "flex gap-4 transition-all duration-300 h-full overflow-y-scroll overflow-x-scroll mr-6",
             {
-              "flex-col": isOpen,
+              "flex-col mr-0": isMobile || isOpen,
             }
           )}
         >
@@ -102,6 +104,7 @@ const ProjectCard: React.FC<{
   image: string;
   url: string;
 }> = ({ title, description, image, url }) => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const { isOpen } = useCardLayout("projects");
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -109,10 +112,10 @@ const ProjectCard: React.FC<{
     window.open(url, "_blank");
   };
 
-  if (isOpen) {
+  if (isMobile || isOpen) {
     return (
       <div
-        className="flex gap-4 hover:shadow rounded-lg group"
+        className="flex gap-4 hover:shadow rounded-lg group items-center"
         onClick={handleClick}
       >
         <Image
