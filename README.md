@@ -1,19 +1,10 @@
-```typescript
-             __ _                                      _   _     
-            / _| |                                    | | | |    
-  _ __ ___ | |_| |__   _____   ____ _ _ __         ___| |_| |__  
- | '_ ` _ \|  _| '_ \ / _ \ \ / / _` | '_ \       / _ \ __| '_ \ 
- | | | | | | | | |_) |  __/\ V / (_| | | | |  _  |  __/ |_| | | |
- |_| |_| |_|_| |_.__/ \___| \_/ \__,_|_| |_| (_)  \___|\__|_| |_|
-```
+## <div align="center">Software Engineer</div>
 
-## <div align="center">Senior Software Engineer @Labrys</div>  
-
-<picture>
+<!-- <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mfbevan/mfbevan/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mfbevan/mfbevan/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/mfbevan/mfbevan/output/github-contribution-grid-snake.svg">
-</picture>
+</picture> -->
 
 With a solid foundation in both Web 2.0 and Web 3.0 technologies, I
 bring expertise in Ethereum smart contract development and full-stack
@@ -21,7 +12,10 @@ application development. Passionate about building innovative and
 performant platforms, I have contributed to several enterprise-level
 platforms, open-source initiatives, and a variety of personal projects.
 
-## Skills  
+Check out my entire portfolio at [mfbevan.com](https://mfbevan.com)
+
+## Skills
+
 <div align="center">  
 <a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="25" /></a>  
 <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="25" /></a>  
@@ -47,11 +41,10 @@ platforms, open-source initiatives, and a variety of personal projects.
 <a href="https://www.latex-project.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/latex.png" alt="LaTeX" height="25" /></a>  
 <a href="https://mariadb.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mariadb.png" alt="Maria DB" height="25" /></a>  
 <a href="https://about.gitlab.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gitlab.svg" alt="GitLab" height="25" /></a>  
-</div>  
+</div>
 
+## Connect
 
-
-## Connect 
 <div align="center">
 <a href="https://github.com/mfbevan" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
@@ -65,4 +58,4 @@ platforms, open-source initiatives, and a variety of personal projects.
 <a href="https://gitlab.com/mfbevan" target="_blank">
 <img src=https://img.shields.io/badge/gitlab-330F63.svg?&style=for-the-badge&logo=gitlab&logoColor=white alt=gitlab style="margin-bottom: 5px;" />
 </a>  
-</div>  
+</div>

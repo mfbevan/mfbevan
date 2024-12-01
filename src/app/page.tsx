@@ -9,6 +9,7 @@ import { SkillsCard } from "@/components/cards/skills-card";
 import { SocialsCard } from "@/components/cards/socials-card";
 import { StatsCards } from "@/components/cards/stats-cards";
 import { TitleCard } from "@/components/cards/title-card";
+import { WorkingOnCard } from "@/components/cards/working-on-card";
 
 export default function Home() {
   return (
@@ -20,13 +21,13 @@ export default function Home() {
         <ProjectsCard />
         <EmploymentCard />
         <EducationCard />
-        <BlogCard />
+        <WorkingOnCard />
         <PortfolioCard />
       </div>
       <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
         <ProjectsCard />
         <SkillsCard />
-        <BlogCard />
+        <WorkingOnCard />
         <TitleCard />
         <EmploymentCard />
         <PortfolioCard />
