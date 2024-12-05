@@ -36,7 +36,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
 
       <Card
         className={cn(
-          "relative cursor-pointer",
+          "relative cursor-pointer transition-[height,width] duration-300",
           isOpen
             ? cn("z-20", whenOpen)
             : cn(
