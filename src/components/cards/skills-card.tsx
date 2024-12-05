@@ -62,15 +62,18 @@ import { IconList } from "../icons/icon";
 import { Typography } from "../ui/typography";
 import { Code2 } from "lucide-react";
 
-export interface SkillsCardProps {}
+export interface SkillsCardProps {
+  delay?: number;
+}
 
-export const SkillsCard: React.FC<SkillsCardProps> = () => {
+export const SkillsCard: React.FC<SkillsCardProps> = ({ delay = 0 }) => {
   return (
     <div className={cn("col-span-4 row-span-2")}>
       <ControlledCard
         card="skills"
         className="flex flex-col gap-4 text-left"
         whenOpen="md: h-[205%] md:w-[120%] md:left-[-20%]"
+        delay={delay}
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-0">
           <CardTitle className="font-medium">Skills</CardTitle>

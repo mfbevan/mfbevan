@@ -6,9 +6,11 @@ import { useCardLayout } from "../hooks/use-card-layout";
 import Image from "next/image";
 import { useMediaQuery } from "usehooks-ts";
 
-export interface ProjectsCardProps {}
+export interface ProjectsCardProps {
+  delay?: number;
+}
 
-export const ProjectsCard: React.FC<ProjectsCardProps> = () => {
+export const ProjectsCard: React.FC<ProjectsCardProps> = ({ delay = 0 }) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const { isOpen } = useCardLayout("projects");
 
@@ -18,6 +20,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = () => {
         card="projects"
         className="flex flex-col gap-2 text-left"
         whenOpen="h-[300%]"
+        delay={delay}
       >
         <CardHeader className="flex flex-row items-center justify-between pb-0">
           <CardTitle className="font-medium">Projects</CardTitle>
@@ -115,7 +118,7 @@ const ProjectCard: React.FC<{
   if (isMobile || isOpen) {
     return (
       <div
-        className="flex gap-4 hover:shadow rounded-lg group items-center"
+        className="flex gap-4 hover:shadow rounded-lg group items-center cursor-pointer"
         onClick={handleClick}
       >
         <Image

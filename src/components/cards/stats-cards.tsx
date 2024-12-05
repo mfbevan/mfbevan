@@ -6,22 +6,29 @@ import "swiper/css/pagination";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-
+import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 
 import { Boxes, FileCode2, Gamepad2 } from "lucide-react";
 
-export interface StatsCardsProps {}
+export interface StatsCardsProps {
+  delay?: number;
+}
 
-export const StatsCards: React.FC<StatsCardsProps> = () => {
+export const StatsCards: React.FC<StatsCardsProps> = ({ delay = 0 }) => {
   return (
-    <div className="col-span-3 lg:col-span-2 row-span-2 h-full w-full">
+    <motion.div
+      className="col-span-3 lg:col-span-2 row-span-2 h-full w-full"
+      initial={{ opacity: 0, y: 10, scale: 0.5 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ delay }}
+    >
       <Swiper
         className="h-full w-full cursor-none"
         effect={"cube"}
         grabCursor={true}
         autoplay={{
-          delay: 3000,
+          delay: 3000 + delay,
           disableOnInteraction: false,
         }}
         spaceBetween={32}
@@ -59,7 +66,7 @@ export const StatsCards: React.FC<StatsCardsProps> = () => {
           />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

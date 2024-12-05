@@ -6,15 +6,20 @@ import { Typography } from "../ui/typography";
 import { Separator } from "../ui/separator";
 import { useCardLayout } from "../hooks/use-card-layout";
 
-export interface EmploymentCardProps {}
+export interface EmploymentCardProps {
+  delay?: number;
+}
 
-export const EmploymentCard: React.FC<EmploymentCardProps> = () => {
+export const EmploymentCard: React.FC<EmploymentCardProps> = ({
+  delay = 0,
+}) => {
   return (
     <div className={cn("col-span-2 row-span-6")}>
       <ControlledCard
         card="employment"
         className="flex flex-col gap-4 text-left"
         whenOpen="h-full w-[250%] left-[-150%]"
+        delay={delay}
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="font-medium">Experience</CardTitle>

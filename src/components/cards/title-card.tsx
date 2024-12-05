@@ -6,14 +6,17 @@ import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 
-export interface TitleCardProps {}
+export interface TitleCardProps {
+  delay?: number;
+}
 
-export const TitleCard: React.FC<TitleCardProps> = () => {
+export const TitleCard: React.FC<TitleCardProps> = ({ delay = 0 }) => {
   return (
     <Card
       className={cn(
         "p-8 flex flex-col gap-4 text-center col-span-6 row-span-4"
       )}
+      transition={{ delay }}
     >
       <div className="flex flex-col items-center gap-4 md:flex-row justify-evenly">
         <Image

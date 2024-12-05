@@ -4,9 +4,11 @@ import { BriefcaseBusiness, X } from "lucide-react";
 import Image from "next/image";
 import { Typography } from "../ui/typography";
 
-export interface WorkingOnCardProps {}
+export interface WorkingOnCardProps {
+  delay?: number;
+}
 
-export const WorkingOnCard: React.FC<WorkingOnCardProps> = () => {
+export const WorkingOnCard: React.FC<WorkingOnCardProps> = ({ delay = 0 }) => {
   const onClick = () => {
     window.open("https://lz-bridge.vercel.app", "_blank");
   };
@@ -15,6 +17,7 @@ export const WorkingOnCard: React.FC<WorkingOnCardProps> = () => {
     <Card
       className={cn("col-span-2 row-span-2 group cursor-pointer")}
       onClick={onClick}
+      transition={{ delay }}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="font-medium">Working On</CardTitle>

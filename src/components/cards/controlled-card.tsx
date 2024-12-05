@@ -9,6 +9,7 @@ export interface ControlledCardProps {
   whenOpen?: string;
   whenClosed?: string;
   className?: string;
+  delay?: number;
 }
 
 export const ControlledCard: React.FC<ControlledCardProps> = ({
@@ -17,6 +18,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
   whenOpen,
   whenClosed,
   className,
+  delay = 0,
 }) => {
   const { isOpen, onClose, onToggle } = useCardLayout(card);
   return (
@@ -34,7 +36,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
 
       <Card
         className={cn(
-          "relative ease transition-all ease-in-out duration-300 cursor-pointer",
+          "relative cursor-pointer",
           isOpen
             ? cn("z-20", whenOpen)
             : cn(
@@ -44,6 +46,7 @@ export const ControlledCard: React.FC<ControlledCardProps> = ({
           className
         )}
         onClick={onToggle}
+        transition={{ delay }}
       >
         {children}
 

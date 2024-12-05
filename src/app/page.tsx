@@ -11,6 +11,8 @@ import { TitleCard } from "@/components/cards/title-card";
 import { WorkingOnCard } from "@/components/cards/working-on-card";
 import Particles from "@/components/ui/particles";
 
+const scale = 1.5;
+
 export default function Home() {
   return (
     <main className="flex md:h-screen w-screen flex-col p-4">
@@ -28,15 +30,15 @@ export default function Home() {
           <PortfolioCard />
         </div>
         <div className="md:grid grid-cols-10 grid-rows-8 gap-4 h-full hidden">
-          <ProjectsCard />
-          <SkillsCard />
-          <WorkingOnCard />
-          <TitleCard />
-          <EmploymentCard />
-          <PortfolioCard />
-          <EducationCard />
-          <SocialsCard />
-          <StatsCards />
+          <ProjectsCard delay={0.1 * scale} />
+          <SkillsCard delay={0.2 * scale} />
+          <WorkingOnCard delay={0.85 * scale} />
+          <TitleCard delay={1.0 * scale} />
+          <EmploymentCard delay={0.3 * scale} />
+          <PortfolioCard delay={0.75 * scale} />
+          <EducationCard delay={0.65 * scale} />
+          <SocialsCard delay={0.5 * scale} />
+          <StatsCards delay={0.4 * scale} />
         </div>
       </div>
     </main>

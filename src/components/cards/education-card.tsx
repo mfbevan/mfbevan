@@ -5,9 +5,11 @@ import { Typography } from "../ui/typography";
 import { ControlledCard } from "./controlled-card";
 import { useCardLayout } from "../hooks/use-card-layout";
 
-export interface EducationCardProps {}
+export interface EducationCardProps {
+  delay?: number;
+}
 
-export const EducationCard: React.FC<EducationCardProps> = () => {
+export const EducationCard: React.FC<EducationCardProps> = ({ delay = 0 }) => {
   const { isOpen } = useCardLayout("education");
 
   return (
@@ -16,6 +18,7 @@ export const EducationCard: React.FC<EducationCardProps> = () => {
         card="education"
         className="flex flex-col gap-4 text-left"
         whenOpen="h-[150%] w-[120%] top-[-50%]"
+        delay={delay}
       >
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="font-medium">Education</CardTitle>

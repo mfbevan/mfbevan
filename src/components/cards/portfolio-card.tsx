@@ -18,11 +18,13 @@ import { Code } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
-export interface PortfolioCardProps {}
+export interface PortfolioCardProps {
+  delay?: number;
+}
 
-export const PortfolioCard: React.FC<PortfolioCardProps> = () => {
+export const PortfolioCard: React.FC<PortfolioCardProps> = ({ delay = 0 }) => {
   return (
-    <Card className={cn("row-span-2 col-span-2")}>
+    <Card className={cn("row-span-2 col-span-2")} transition={{ delay }}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="font-medium">This Portfolio</CardTitle>
         <Code className="h-4 w-4 text-muted-foreground" />
