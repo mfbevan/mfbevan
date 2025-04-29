@@ -27,16 +27,16 @@ export const WorkingOnCard: React.FC<WorkingOnCardProps> = ({ delay = 0 }) => {
       <CardContent className="relative flex flex-col overflow-none h-full items-center justify-center -mt-4">
         <div className="flex flex-row gap-2 items-center">
           <Image
-            src="/projects/lzbridge.jpeg"
-            alt="LayerZero Bridge"
+            src="/projects/foundly.png"
+            alt="Foundly Labs"
             width={60}
             height={60}
             className="rounded-2xl aspect-square object-cover"
           />
           <X />
           <Image
-            src="/projects/lz.jpg"
-            alt="LayerZero Bridge"
+            src="/projects/ir.png"
+            alt="ImmutableRatings"
             width={60}
             height={60}
             className="rounded-2xl aspect-square object-cover"
@@ -44,13 +44,13 @@ export const WorkingOnCard: React.FC<WorkingOnCardProps> = ({ delay = 0 }) => {
         </div>
 
         <Typography variant="h3" className="text-lg line-clamp-1">
-          LayerZero Bridge UI
+          Immutable Ratings
         </Typography>
         <Typography
           variant="p"
           className="text-xs text-muted-foreground line-clamp-3 text-center"
         >
-          Open-source LayerZero OFT bridging interface.
+          Ratings. Onchain. Forever.
         </Typography>
       </CardContent>
     </Card>

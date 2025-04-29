@@ -36,6 +36,31 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({ delay = 0 }) => {
           )}
         >
           <ProjectCard
+            title="Foundly Labs"
+            description="Foundly Labs is a research and development company that builds cutting-edge blockchain, AI and gaming solutions. Some notable projects include glowww.dev, blobspace.fun and ratings.wtf"
+            image="/projects/foundly.png"
+            url="https://foundly.dev/"
+          />
+
+          <ProjectCard
+            title="Immutable Ratings"
+            description="Instantly rate on Base with a Thumbs Up or Thumbs Down Profiles, Posts or Pages from X, Warpcast, and Wikipedia. Ratings. Onchain. Forever."
+            image="/projects/ir.png"
+            url="https://ratings.wtf/"
+          />
+          <ProjectCard
+            title="blobspace.fun"
+            description="This is a visualization tool for exploring blob data on Ethereum. Explore historical blob data since the Dencun upgrade using the historical timeline."
+            image="/projects/blobspace.png"
+            url="https://blobspace.fun/"
+          />
+          <ProjectCard
+            title="glowww.dev"
+            description="Curated design and developer tools and resources to make your projects glowww. This is an open source project by Foundly"
+            image="/projects/glowww.png"
+            url="https://www.glowww.dev/"
+          />
+          <ProjectCard
             title="ethdash.xyz"
             description="All of your favourite Ethereum Dashboards in one place. Thanks to Superphiz for getting this idea started! Check out the site at www.ethdash.xyz"
             image="/projects/ethdash.png"

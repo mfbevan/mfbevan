@@ -28,10 +28,19 @@ export const EmploymentCard: React.FC<EmploymentCardProps> = ({
 
         <CardContent className="flex flex-col gap-4 overflow-scroll md:mb-8">
           <EmploymentItem
+            company="Foundly Labs"
+            date="Since March 2024"
+            title="Research & Development"
+            description="I am currently working on various Research & Development projects at Foundly Labs, including cutting-edge blockchain, AI and gaming solutions. Some notable projects include glowww.dev, blobspace.fun and ratings.wtf"
+          />
+
+          <Separator />
+
+          <EmploymentItem
             company="Labrys"
             date="Since March 2022"
             title="Senior Blockchain Engineer"
-            description="I currently work as a Senior Blockchain and Full Stack Software Engineer at Australia's largest Blockchain Development agency, tackling problems in both the Web 2.0 and Web 3.0 world, developing smart contract and web applications to support them. I have particular skills in Solidity, Hardhat, Ethers.js, Web3.js, ThirdWeb and Alchemy services for smart contract development, as well as Next.js, React, TypeScript, Node.js, MongoDB experience for building full-stack Web3 applications. Continued areas of research "
+            description="Senior Blockchain and Full Stack Software Engineer at Australia's largest Blockchain Development agency, tackling problems in both the Web 2.0 and Web 3.0 world, developing smart contract and web applications to support them. I have particular skills in Solidity, Hardhat, Ethers.js, Web3.js, ThirdWeb and Alchemy services for smart contract development, as well as Next.js, React, TypeScript, Node.js, MongoDB experience for building full-stack Web3 applications. Continued areas of research "
           />
 
           <Separator />
